@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hasil</title>
+    <!-- Bootstrap Core CSS -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="/static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="/static/css/stylish-portfolio.min.css" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/3fd02bb544.js"></script>
+</head>
+<body
+style="background-image:url('../static/img/hasil.jpg')">
+<div class="container text-center my-auto">
+<h5>
+    <div class="row"> <h1>Digimon Favorit</h1></div>
+            <div class="row">
+                    <img width=50, height="50" src="{{df.loc[fav]['image']}}">
+                <div class="col s4">
+                    {{df.loc[fav]['digimon']}}
+                </div>
+                <div class="col s4">
+                    Stage:      {{df.loc[fav]['stage']}}&nbsp
+                    Type:       {{df.loc[fav]['type']}}&nbsp
+                    Attribute:  {{df.loc[fav]['attribute']}}
+                </div>
+    </div>    
+
+    <div class="row"> <h1>Rekomendasi Digimon</h1></div>
+    <h5>
+        <div class="row">
+                <img width=50, height="50" src="{{df.loc[recommendation[0]]['image']}}">
+            <div class="col s4">
+                {{df.loc[recommendation[0]]['digimon']}}
+            </div>
+            <div class="col s4">
+                    Stage:      {{df.loc[recommendation[0]]['stage']}}&nbsp
+                    Type:       {{df.loc[recommendation[0]]['type']}}&nbsp
+                    Attribute:  {{df.loc[recommendation[0]]['attribute']}}
+            </div>    
+    </div>
+
+        <div class="row">
+                    <img width=50, height="50" src="{{df.loc[recommendation[1]]['image']}}">
+            <div class="col s4">
+                {{df.loc[recommendation[1]]['digimon']}}
+            </div>
+            <div class="col s4">
+                    Stage:      {{df.loc[recommendation[1]]['stage']}}&nbsp
+                    Type:       {{df.loc[recommendation[1]]['type']}}&nbsp
+                    Attribute:  {{df.loc[recommendation[1]]['attribute']}}
+            </div>    
+        </div>
+
+        <div class="row">
+            <img width=50, height="50" src="{{df.loc[recommendation[2]]['image']}}">
+            <div class="col s4">
+                {{df.loc[recommendation[2]]['digimon']}}
+            </div>
+            <div class="col s4">
+                    Stage:      {{df.loc[recommendation[2]]['stage']}}&nbsp
+                    Type:       {{df.loc[recommendation[2]]['type']}}&nbsp
+                    Attribute:  {{df.loc[recommendation[2]]['attribute']}}
+            </div>    
+        </div>
+
+        <div class="row">
+                <img width=50, height="50" src="{{df.loc[recommendation[3]]['image']}}">
+            <div class="col s4">
+                {{df.loc[recommendation[3]]['digimon']}}
+            </div>
+            <div class="col s4">
+                    Stage:      {{df.loc[recommendation[3]]['stage']}}&nbsp
+                    Type:       {{df.loc[recommendation[3]]['type']}}&nbsp
+                    Attribute:  {{df.loc[recommendation[3]]['attribute']}}
+            </div>
+        </div>    
+
+        <div class="row">
+                <img width=50, height="50" src="{{df.loc[recommendation[4]]['image']}}">
+            <div class="col s4">
+                {{df.loc[recommendation[4]]['digimon']}}
+            </div>
+            <div class="col s4">
+                    Stage:      {{df.loc[recommendation[4]]['stage']}}&nbsp
+                    Type:       {{df.loc[recommendation[4]]['type']}}&nbsp
+                    Attribute:  {{df.loc[recommendation[4]]['attribute']}}
+            </div>
+        </div> 
+        
+        <div class="row">
+                <img width=50, height="50" src="{{df.loc[recommendation[5]]['image']}}">
+            <div class="col s4">
+                {{df.loc[recommendation[5]]['digimon']}}
+            </div>
+            <div class="col s4">
+                    Stage:      {{df.loc[recommendation[5]]['stage']}}&nbsp
+                    Type:       {{df.loc[recommendation[5]]['type']}}&nbsp
+                    Attribute:  {{df.loc[recommendation[5]]['attribute']}}
+            </div>
+        </div>    
+            <div class="container text-center my-auto">
+                <form action="http://127.0.0.1:5000/">
+                    <button class='btn waves-effect waves-light'>
+                            Kembali
+                            &nbsp;&nbsp;
+                            <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+</h5>
+</div>
+</body>
+</html>
